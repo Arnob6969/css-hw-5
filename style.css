@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+nav{
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+   
+background: linear-gradient(to right, #ACB6E5, #74ebd5);
+padding: 20px 0px;
+}
+nav ul li{
+    display: inline;
+    
+}
+nav ul li a{
+    color:black;
+    display: inline;
+    padding: 30px;
+    font-size: 20px;
+    transition: 350ms;
+    position: relative;
+}
+nav ul li a::before{
+    content: '' ;
+    width: 0%;
+    height: 2%;
+    position: absolute;
+    background-color: greenyellow;
+    bottom: 0;
+    left: 0;
+    transition: 0.35s;
+}
+nav ul li:hover a::before{
+    width: 100%;
+}
